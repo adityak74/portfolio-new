@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  portfolio-app:
+      build: .
+      restart: always
+      ports:
+        - "4000:9000"
