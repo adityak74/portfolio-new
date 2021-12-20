@@ -13,6 +13,116 @@ export const heroData = {
   name: 'Aditya Karnam',
   subtitle: 'Full Stack Blockchain Developer',
   cta: 'Who am I?',
+  technologies: [
+    {
+      id: nanoid(),
+      img: 'typescript.png',
+      alt: 'trypescript',
+      url: 'https://www.typescriptlang.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'aws.png',
+      alt: 'aws',
+      url: 'https://aws.amazon.com/console/',
+    },
+    {
+      id: nanoid(),
+      img: 'docker.png',
+      alt: 'docker',
+      url: 'https://www.docker.com/',
+    },
+    {
+      id: nanoid(),
+      img: 'ethereum.png',
+      alt: 'ethereum',
+      url: 'https://ethereum.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'go.png',
+      alt: 'go',
+      url: 'https://go.dev/',
+    },
+    {
+      id: nanoid(),
+      img: 'graphql.png',
+      alt: 'graphql',
+      url: 'https://graphql.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'hashicorp-terraform.png',
+      alt: 'hashicorp-terraform',
+      url: 'https://www.terraform.io/',
+    },
+    {
+      id: nanoid(),
+      img: 'html5.png',
+      alt: 'html5',
+      url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
+    },
+    {
+      id: nanoid(),
+      img: 'kafka.png',
+      alt: 'kafka',
+      url: 'https://kafka.apache.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'kubernets.png',
+      alt: 'kubernets',
+      url: 'https://kubernetes.io/',
+    },
+    {
+      id: nanoid(),
+      img: 'nodejs.png',
+      alt: 'nodejs',
+      url: 'https://nodejs.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'postgresql.png',
+      alt: 'postgresql',
+      url: 'https://www.postgresql.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'rails.png',
+      alt: 'rails',
+      url: 'https://rubyonrails.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'react.png',
+      alt: 'react',
+      url: 'https://reactjs.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'redis.png',
+      alt: 'redis',
+      url: 'https://redis.io/',
+    },
+    {
+      id: nanoid(),
+      img: 'sql.png',
+      alt: 'sql',
+      url: 'https://www.microsoft.com/en-us/sql-server/sql-server-2019',
+    },
+    {
+      id: nanoid(),
+      img: 'webpack.png',
+      alt: 'kafka',
+      url: 'https://webpack.js.org/',
+    },
+    {
+      id: nanoid(),
+      img: 'gatsby.png',
+      alt: 'gatsbyjs',
+      url: 'https://www.gatsbyjs.com/',
+    },
+  ],
 };
 
 // ABOUT DATA
@@ -23,6 +133,7 @@ export const aboutData = {
     'I write softwares to make lives easier and better. Some of my work improves life and health as well.',
   paragraphThree: 'I blog at levelup.gitconnected.com',
   resume: 'https://www.linkedin.com/in/adityakarnamgrao/overlay/1635471869991/single-media-viewer/', // if no resume, the button will not show up
+  resumePDF: 'Aditya_Karnam_Gururaj_Rao_Resume.pdf',
 };
 
 // PROJECTS DATA

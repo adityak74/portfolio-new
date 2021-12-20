@@ -3,10 +3,11 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import TechDisplayImg from '../Image/TechDisplayImg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, cta, technologies } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -40,6 +41,25 @@ const Header = () => {
               </Link>
             </span>
           </p>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1500} distance="30px">
+          <div className="hero-tech-icons">
+            {technologies &&
+              technologies.map((technology) => {
+                const { id, img, alt, url } = technology;
+                return (
+                  <a
+                    key={id}
+                    href={url || null}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label={name}
+                  >
+                    <TechDisplayImg alt={alt} filename={img} />
+                  </a>
+                );
+              })}
+          </div>
         </Fade>
       </Container>
     </section>

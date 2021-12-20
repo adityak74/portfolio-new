@@ -20,6 +20,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `resume`,
+        path: `${__dirname}/src/resume/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Simplefolio`,
