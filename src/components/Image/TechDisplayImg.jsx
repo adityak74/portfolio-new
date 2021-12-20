@@ -13,7 +13,7 @@ const TechDisplayImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 80) {
+                fluid(maxWidth: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
